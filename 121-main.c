@@ -1,0 +1,41 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    avl_t *the_root;
+    avl_t *node;
+
+    the_root = NULL;
+    node = avl_insert(&the_root, 98);
+    printf("Inserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 402);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 12);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 46);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 128);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 256);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 512);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    node = avl_insert(&the_root, 50);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(the_root);
+    return (0);
+}
